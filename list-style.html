@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1.0" >
+    <title>목록 스타일 속성 </title>
+    <style>
+        ul li {
+            list-style-type: square;
+        }
+        .class1 li {
+            list-style-type: lower-roman;
+        }
+        .class2 li {
+            list-style-type: upper-alpha;
+        }
+        .class3 li {
+            list-style-type: lower-alpha;
+        }
+        #id1, #id2 {
+            list-style-position: inside;
+        }
+        #id3 {
+            list-style-image: url("../img/star-type.jpg");
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>AaBbCc Style01</li>
+        <ol class="class1">
+            <li>AaBbCc Style01-1</li>
+            <li>AaBbCc Style01-2</li>
+            <li>AaBbCc Style01-3</li>
+        </ol>
+        <li id="id1">AaBbCc Style02</li>
+        <ol class="class2">
+            <li>AaBbCc Style02-1</li>
+            <li>AaBbCc Style02-2</li>
+        </ol>
+        <li>AaBbCc Style03</li>
+        <ol id="id1" class="class3">
+            <li>AaBbCc Style03-1</li>
+            <li>AaBbCc Style03-2</li>
+        </ol>
+        <li id="id3">AaBbCc Style04</li>
+    </ul>
+</body>
+</html>
